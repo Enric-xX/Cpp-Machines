@@ -71,16 +71,16 @@ public:
 };
 
 int main() {
-    SetConsoleTitleA("MAQUINA BUSCADORA DE MEMORIA - ENRIC");
+    SetConsoleTitleA("MAQUINA BUSCADORA DE MEMORIA);
     system("color 0b"); // Azul eléctrico
 
     MemoryMachine maquina;
 
-    cout << "MAQUINA INICIADA. Buscando objetivo: cs2.exe..." << endl;
+    cout << "MAQUINA INICIADA. Buscando objetivo: elprocesoquehayaselegido.exe..." << endl;
 
     while (true) {
         if (maquina.processId == 0) {
-            if (maquina.FindProcess("cs2.exe")) {
+            if (maquina.FindProcess("elprocesoquequieras.exe")) {
                 cout << "[+] Objetivo localizado. Iniciando calculos de memoria..." << endl;
             }
         } else {
